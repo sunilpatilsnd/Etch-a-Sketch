@@ -26,17 +26,34 @@ function createGrid(gridSize){
     body.replaceChild(container, container);
 }
 
-createGrid(16);
+function clearGrid(){                                   //clears the grid
+    const container = document.querySelector('.container');
+    while(container.hasChildNodes()){
+        container.removeChild(container.firstChild);
+    }
+    // console.log('inside cleargrid'); 
+}
+
+
 
 const changeSize = document.querySelector('.gridder');
 changeSize.addEventListener("click", () =>{
     let input = prompt('Enter size of the grid between 8-100');
     let size = parseInt(input);
-    console.log(size);
-    createGrid(size);
+    if(isNaN(size)){
+        alert('Please enter a number between 8-100')
+    }
+    else if(size > 100){
+        alert('Please enter a number less than 100');
+    }
+    else{
+        clearGrid();
+        createGrid(size);
+    }
+        
 });
 
-
+createGrid(16); //create grid on first load
 
 
 

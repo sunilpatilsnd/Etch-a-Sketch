@@ -1,8 +1,8 @@
-Etch a Sketch
+## Etch a Sketch
 
 ### created with a lot of passion.
 
-## Contains below tools
+### Contains below tools
 
 > **Pencil** to draw on the canvas.
 

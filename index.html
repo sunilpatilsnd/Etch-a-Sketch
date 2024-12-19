@@ -7,10 +7,22 @@
   <script src="script.js" defer></script>
   <title>Etch-A-Sketch</title>
 </head>
-<body>
-      <div class="center">
-        <h1>Etch-A-Sketch</h1>
-        <button class="gridder">Change Grid Size</button>
+<body>   
+    <h1 class="center">Etch-A-Sketch</h1>
+    <div class="flex">        
+      <div class="container canvas">
       </div>
+      <div class="sidebar">     
+        <h2>Tools</h2>
+        <p>Current grid size: <span id="size"></span></p>  
+        <ul class="menus">          
+          <li><button class="pencil">Pencil</button></li>
+          <li><button class="eraser">Eraser</button></li>
+          <li><button class="clear">Clear grid</button></li>
+          <li><button class="gridder">Change Grid Size</button></li> 
+        </ul>          
+      </div>
+  </div>
+  <footer class="center">Created by Sunil Patil</footer>
 </body>
 </html>

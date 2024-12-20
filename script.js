@@ -71,7 +71,7 @@ function clearGrid(){
     let boxlength = boxes.length;
     boxes.forEach(box => {
         box.classList.toggle('paint');
-        box.style.backgroundColor = '#fff'; 
+        // box.style.backgroundColor = '#fff'; 
     });
     
 }
